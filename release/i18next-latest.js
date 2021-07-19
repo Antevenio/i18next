@@ -1,5 +1,5 @@
-// i18next, v1.11.5
-// Copyright (c)2016 Jan Mühlemann (jamuhl).
+// i18next, v1.11.6
+// Copyright (c)2021 Jan Mühlemann (jamuhl).
 // Distributed under MIT license
 // http://i18next.com
 (function(root) {
@@ -769,7 +769,7 @@
             }
             else expires = "";
             domain = (domain)? "domain="+domain+";" : "";
-            document.cookie = name+"="+value+expires+";"+domain+"path=/";
+            document.cookie = name+"="+value+expires+";"+domain+"path=/; secure";
         },
     
         read: function(name) {

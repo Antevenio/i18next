@@ -388,7 +388,7 @@ var _cookie = {
         }
         else expires = "";
         domain = (domain)? "domain="+domain+";" : "";
-        document.cookie = name+"="+value+expires+";"+domain+"path=/";
+        document.cookie = name+"="+value+expires+";"+domain+"path=/; secure";
     },
 
     read: function(name) {
